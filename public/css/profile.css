@@ -1,0 +1,202 @@
+* Core Layout */
+.container {
+  animation: fadeInUp 0.6s ease-in-out;
+}
+.my-profile {
+    padding-bottom: 1rem;
+}
+.profile-name{
+    margin-left: 10px;
+}
+.edit{
+    align-items: center;
+    justify-content: center;
+    padding-left: 5px;
+}
+.about-me{
+    display: flexS;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 12rem;
+}
+.mb-5, .my-5 {
+    padding: 2rem !important;
+    border: 1px solid rgba(0,0,0,0.125);
+  padding: 1rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+h1, h3, h4, h5 {
+  font-weight: 600;
+  color: #222;
+}
+
+.nav-tabs {
+  border-bottom: 2px solid #dee2e6;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-tabs .nav-link {
+  color: #555;
+  border: none;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+  color: #0d6efd;
+  border-color: #0d6efd;
+  background-color: transparent;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #0a58ca;
+}
+
+.tab-content {
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Avatar Section */
+.avatar{
+    padding: 0;
+    margin: 0;
+}
+#mainAvatar {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#mainAvatar:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card-header {
+  background-color: transparent;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body p {
+  font-size: 15px;
+  color: #333;
+}
+
+/* Buttons */
+.btn {
+  transition: all 0.25s ease-in-out;
+}
+
+.btn-outline-secondary:hover,
+.btn-secondary:hover,
+.btn-primary:hover {
+  transform: scale(1.03);
+}
+
+.btn-sm {
+  padding: 4px 10px;
+  font-size: 0.85rem;
+}
+
+/* Form Inputs */
+.form-control {
+  border-radius: 0.5rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* List group */
+.list-group-item {
+  border: none;
+  background-color: #f9f9f9;
+  transition: background-color 0.2s;
+  font-size: 15px;
+}
+
+.list-group-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* Modal (Cropper) */
+.modal-content {
+  border-radius: 1rem;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+#cropImage {
+  transition: all 0.3s ease;
+}
+
+button.close {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  opacity: 0.7;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1218px) {
+    .box{
+        padding: 0;
+    }
+}
+@media (max-width: 768px) {
+    .profile-name{
+        margin-left: 10px;
+    }
+}

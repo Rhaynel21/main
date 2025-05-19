@@ -1,0 +1,603 @@
+/* Header styling */
+.site-header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 12px 12px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.site-logo {
+    height: 80px;
+    margin-right: 15px;
+    transition: transform 0.2s ease;
+}
+
+.site-logo:hover {
+    transform: scale(1.05);
+}
+
+.site-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0;
+}
+
+/* Search Bar Styling */
+.form-control.rounded-pill {
+    padding-left: 20px;
+    padding-right: 40px;
+    height: 42px;
+    border: 1px solid #e1e5eb;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.form-control.rounded-pill:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0.25);
+    border-color: #80bdff;
+    outline: none;
+}
+
+/* Create Post Button */
+.btn-primary.rounded-pill {
+    padding: 8px 20px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0,123,255,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary.rounded-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,123,255,0.4);
+}
+
+/* Navigation Links */
+.nav-item .nav-link {
+    color: #555;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-item .nav-link:hover, 
+.nav-item .nav-link.active {
+    color: #007bff;
+}
+
+.nav-item .nav-link i {
+    margin-right: 5px;
+}
+
+/* Profile dropdown styling */
+.profile-toggle {
+    max-width: 180px; /* Set your desired fixed width */
+    cursor: pointer;
+  }
+.profile-dropdown {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.profile-dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+.profile-avatar {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e9ecef;
+}
+
+.user-name {
+    font-weight: 600;
+    margin: 0 8px;
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.dropdown-menu {
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    padding: 0.5rem 0;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.dropdown-divider {
+    margin: 0.25rem 0;
+}
+
+/* Main content area */
+#content {
+    padding-top: 20px;
+    min-height: calc(100vh - 70px);
+    transition: margin-left 0.3s ease;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    z-index: 1001;
+    transition: transform 0.3s ease, width 0.3s ease;
+    overflow-y: auto;
+    padding-top: 15px;
+    
+}
+
+.sidebar-collapsed {
+    transform: translateX(-220px);
+    width: 250px; /* You might want to reconsider this width if collapsed */
+}
+
+.sidebar-header {
+    padding: 0 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.sidebar-logo {
+    height: 60px;
+    transition: transform 0.2s ease;
+}
+
+.sidebar-logo:hover {
+    transform: scale(1.05);
+}
+
+.desktop-logo {
+    display: block;
+}
+
+.mobile-logo {
+    display: none;
+    height: 40px;
+}
+
+.sidebar-content {
+    padding: 15px;
+}
+
+.sidebar-category {
+    margin-bottom: 20px;
+}
+
+.sidebar-category-title {
+    color: #6c757d;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    padding-left: 10px;
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-item {
+    margin-bottom: 5px;
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    color: #495057;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-link:hover, 
+.sidebar-link.active {
+    background-color: rgba(0, 123, 255, 0.1);
+    color: #007bff;
+}
+
+.sidebar-link i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.sidebar-text {
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sidebar-divider {
+    height: 1px;
+    background-color: #e9ecef;
+    margin: 15px 0;
+}
+
+/* Sidebar Toggle Button */
+#sidenavToggle {
+    position: fixed;
+    top: 20px;
+    left: 0; /* Adjust dynamically via JS if needed */
+    margin-left: 250px; /* starts next to the sidebar when closed */
+    z-index: 1100;
+    background: rgba(255, 255, 255, 0.85);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: margin-left 0.3s ease, background 0.3s ease;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+  }
+
+/* When sidenav is collapsed */
+body:not(.sidenav-open) .sidenav-toggle {
+    left: 70px; /* Adjust based on your collapsed width */
+}
+
+/* Slight hover effect */
+.sidenav-toggle:hover {
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Sidebar (sidenav) hidden offscreen */
+#sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background: white;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1050;
+    overflow-y: auto;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  }
+
+/* Sidebar visible */
+#sidenav.open {
+    transform: translateX(0);
+  }
+
+/* Overlay hidden */
+#sidenavOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+    z-index: 1040;
+  }
+  .dropdown-toggle .dropdown-arrow {
+    transition: transform 0.3s ease;
+    flex-shrink: 0; /* icon never shrinks */
+  }
+  
+  .dropdown.show .dropdown-toggle .dropdown-arrow {
+    transform: rotate(180deg);
+  }
+  .dropdown-arrow-admin {
+    transition: transform 0.3s ease;
+    flex-shrink: 0; /* icon never shrinks */
+    font-size: 12px;
+  }
+  
+.rotate-arrow-admin {
+    transform: rotate(180deg);
+    padding-left: 25px;
+  }
+  .export-button{
+    width: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+.dropdown{
+    display: flex;
+    justify-content: flex-end;
+}
+/* Overlay visible */
+/* #sidenavOverlay.open {
+    opacity: 1;
+    visibility: visible;
+  } */
+  
+  /* Disable page scroll when sidenav is open */
+  body.sidenav-open {
+    overflow: hidden;
+  }
+  /* When sidenav is open, push toggle button left with sidebar */
+#sidenavToggle.open {
+    margin-left: 232px;
+  }
+  
+  /* When sidenav closed, place toggle near left edge */
+  #sidenavToggle:not(.open) {
+    margin-left: 20px;
+  }
+  
+  /* Toggle button hover effect */
+  #sidenavToggle:hover {
+    background: rgba(255, 255, 255, 1);
+  }
+  
+  /* Toggle button icon styling */
+  #sidenavToggle i {
+    transition: transform 0.3s ease;
+    pointer-events: none;
+  }
+  
+  /* Mobile logo styling */
+  .mobile-logo {
+    display: none;
+    height: 40px;
+    transition: opacity 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .mt-3, .my-3{
+        margin-top: 2rem !important;;
+    }
+    .site-logo {
+        height: 60px;
+        padding-left: 25px;
+    }
+    #sidebarToggleMobile{
+        display: none;
+    }
+    .sidenav-logo.mobile-logo {
+      display: none !important; /* show mobile logo */
+      height: 40px;
+      opacity: 1;
+    }
+  
+    .sidenav-logo.desktop-logo {
+      display: block !important; /* hide desktop logo */
+    }
+    #sidenavToggle {
+        display: flex;
+    }
+    .dropdown-hide-mobile {
+      display: none !important;
+    }
+  }
+  
+/* Sidebar toggle hover & icon rotation */
+.sidebar-toggle:hover {
+    background-color: #0069d9;
+}
+
+.sidebar-toggle i {
+    transition: transform 0.3s ease;
+}
+
+.sidebar-collapsed .sidebar-toggle i {
+    transform: rotate(180deg);
+}
+
+/* Mobile Toggle Button */
+#sidebarToggleMobile {
+    background: transparent;
+    border: none;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 0;
+    margin-right: 10px;
+    display: block;
+}
+
+/* Adjust layout when sidebar is expanded
+body.sidebar-expanded #content {
+    margin-left: 250px;
+} */
+
+/* Responsive Styles */
+@media (max-width: 991.98px) {
+    #sidebarToggleMobile {
+        background: transparent;
+        border: none;
+        color: #333;
+        font-size: 1.2rem;
+        padding: 0;
+        margin-right: 10px;
+        display: none;
+    }
+    .site-logo {
+        height: 60px;
+    }
+    
+    .desktop-logo {
+        display: none;
+    }
+    
+    .mobile-logo {
+        display: block;
+    }
+    
+    #sidebarToggle {
+        display: flex;
+    }
+    
+    #sidebarToggleDesktop {
+        display: none;
+    }
+    
+    .sidebar {
+        transform: translateX(-100%);
+        width: 250px;
+    }
+    
+    .sidebar.show {
+        transform: translateX(0);
+    }
+    
+    body.sidebar-expanded #content {
+        margin-left: 0;
+    }
+    
+    /* .sidebar-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 1000;
+        display: none;
+    } */
+    
+    /* .sidebar-overlay.show {
+        display: block;
+    }
+} */
+
+@media (max-width: 767.98px) {
+    .col-md-5 {
+        order: 3;
+        margin-top: 10px;
+    }
+    
+    .site-header .row {
+        flex-wrap: wrap;
+    }
+    
+    .col-md-3 {
+        flex: 0 0 auto;
+        width: auto;
+    }
+    
+    .col-md-4 {
+        flex: 0 0 auto;
+        width: auto;
+        margin-left: auto;
+    }
+    #content{
+        padding: 0;
+    }
+}
+
+}
+/* tabs */
+/* Smooth table scroll container */
+.table-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Main responses table */
+  #responsesTable {
+    min-width: 1200px;
+    font-size: 0.95rem;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+  
+  #responsesTable thead th {
+    background-color: #f7f9fb;
+    color: #343a40;
+    font-weight: 600;
+    border-bottom: 2px solid #dee2e6;
+    padding: 0.75rem 1rem;
+    white-space: nowrap;
+  }
+  
+  #responsesTable tbody td {
+    padding: 0.75rem 1rem;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+    color: #555;
+  }
+  
+  #responsesTable tbody tr:hover {
+    background-color: #f1f3f5;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Recently Answered section */
+  .recent-answered-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #212529;
+  }
+  
+  .recent-card {
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    overflow: hidden;
+    margin-bottom: 3rem;
+  }
+  
+  .recent-card .table thead {
+    background-color: #f1f3f5;
+  }
+  
+  .recent-card .table th,
+  .recent-card .table td {
+    padding: 0.75rem 1rem;
+    white-space: nowrap;
+    border-top: 1px solid #eaeaea;
+    color: #495057;
+  }
+  
+  .recent-card .table tbody tr:hover {
+    background-color: #f9fafb;
+  }
+  
+  /* Optional scroll styling for desktop */
+  .table-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+  .table-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  .table-scroll::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
